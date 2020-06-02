@@ -4,8 +4,10 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "start": "ts-node-dev src/server.ts",
-        "lint": "eslint 'src/**/*.{js,ts}' --quiet --fix"
+        "start": "ts-node-dev --ignore-watch node_modules src/server.ts",
+        "lint": "eslint 'src/**/*.{js,ts}' --quiet --fix",
+        "knex:migrate": "knex --knexfile knexfile.ts migrate:latest",
+        "knex:seed": "knex --knexfile knexfile.ts seed:run"
     },
     "repository": {
         "type": "git",
@@ -19,9 +21,13 @@
     },
     "homepage": "https://github.com/maykon-oliveira/leve-meu-lixo#readme",
     "dependencies": {
-        "express": "^4.17.1"
+        "cors": "^2.8.5",
+        "express": "^4.17.1",
+        "knex": "^0.21.1",
+        "sqlite3": "^4.2.0"
     },
     "devDependencies": {
+        "@types/cors": "^2.8.6",
         "@types/express": "^4.17.6",
         "@typescript-eslint/eslint-plugin": "^3.1.0",
         "@typescript-eslint/parser": "^3.1.0",

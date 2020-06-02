@@ -1,0 +1,29 @@
+### find all users
+GET http://localhost:8081/users
+
+### find user by id
+GET http://localhost:8081/users/2
+
+### find all items
+GET http://localhost:8081/items
+
+### find all items
+POST http://localhost:8081/points
+Content-Type: application/json
+
+{
+    "name": "Lixão Norte",
+    "email": "email@email.com",
+    "whatsapp": "68681",
+    "city": "Parnamirim",
+    "uf": "RN",
+    "lat": -45.545454,
+    "lng": -30.454554,
+    "items": [4,5]
+}
+
+### find all items
+GET http://localhost:8081/points/2
+
+### find all items
+GET http://localhost:8081/points?uf=RN&city=Parnamirim&items=4
