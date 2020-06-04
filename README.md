@@ -19,5 +19,3 @@
 # [Next Level Week](https://nextlevelweek.com/inscricao/1)
 
 Uma semana para acelerar sua evolução como dev e avançar para o próximo nível.
-
-![](stuff/1440x900.jpg)

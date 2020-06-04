@@ -7,7 +7,7 @@ ItemController.get('', (req, res) => {
     db('items')
         .select('*')
         .then((data) => {
-            const items = data.map(i => ({...i, image_url: `http://localhost:8081/uploads/${i.image}`}))
+            const items = data.map((i) => ({ ...i, image_url: `http://192.168.1.6:8081/uploads/${i.image}` }));
             res.json(items);
         })
         .catch(({ error }) => {
