@@ -10,6 +10,7 @@ import { FiArrowLeft } from 'react-icons/fi';
 import logo from '../../assets/logo.svg';
 import './styles.css';
 import Axios from 'axios';
+import Dropzone from '../../components/Dropzone';
 
 interface Item {
     id: number;
@@ -36,6 +37,7 @@ const CreatePoint = ({ lat = 51.505, lng = -0.09, zoom = 13 }) => {
     const [cities, setCities] = useState<City[]>([]);
     const [selectedCity, setSelectedCity] = useState('0');
     const [selectedItems, setSelectedItems] = useState<number[]>([]);
+    const [selectedFile, setSelectedFile] = useState<File>();
     const [form, setForm] = useState({
         name: '',
         email: '',
@@ -89,18 +91,24 @@ const CreatePoint = ({ lat = 51.505, lng = -0.09, zoom = 13 }) => {
     const handleSubmit = (e: FormEvent) => {
         e.preventDefault();
 
+        const formData = new FormData();
+
         const [lat, lng] = selectedMapPosition;
 
-        const point = {
-            ...form,
-            uf: selectedUF,
-            city: selectedCity,
-            lat,
-            lng,
-            items: selectedItems,
-        };
+        formData.append('uf', selectedUF);
+        formData.append('city', selectedCity);
+        formData.append('lat', String(lat));
+        formData.append('lng', String(lng));
+        formData.append('items', selectedItems.join(','));
+        formData.append('name', form.name);
+        formData.append('email', form.email);
+        formData.append('whatsapp', form.whatsapp);
 
-        api.post('/points', point).then(({ data }) => {
+        if (selectedFile) {
+            formData.append('image', selectedFile);
+        }
+
+        api.post('/points', formData).then(({ data }) => {
             alert('Ponto cadastrado');
             history.push('/');
         });
@@ -119,6 +127,8 @@ const CreatePoint = ({ lat = 51.505, lng = -0.09, zoom = 13 }) => {
 
             <form onSubmit={handleSubmit}>
                 <h1>Cadastro do ponto de coleta</h1>
+
+                <Dropzone onFileUploaded={setSelectedFile} />
 
                 <fieldset>
                     <legend>

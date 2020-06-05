@@ -1,6 +1,7 @@
 import express from 'express';
 import { resolve } from 'path';
 import cors from 'cors';
+import { errors } from 'celebrate';
 
 // Controllers
 import ItemController from './controllers/ItemController';
@@ -14,5 +15,7 @@ app.use('/uploads', express.static(resolve(__dirname, '..', 'uploads')));
 
 app.use('/items', ItemController);
 app.use('/points', PointController);
+
+app.use(errors());
 
 app.listen(8081);
