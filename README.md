@@ -57,13 +57,13 @@ O <strong>Ecoleta</strong> serve como um Marketplace, uma conexão entre empresa
 ## 🌐 Frontend
 
 <h1 align="center">
-    <img alt="Ecoleta Front-end" title="#delicinha" src=".github/frontend.gif" />
+    <!-- <img alt="Ecoleta Front-end" title="#delicinha" src=".github/frontend.gif" /> -->
 </h1>
 
 ## 📱 Mobile
 
 <h1 align="center">
-    <img alt="Ecoleta Mobile" title="#delicinha" src=".github/mobile.gif" />
+    <!-- <img alt="Ecoleta Mobile" title="#delicinha" src=".github/mobile.gif" /> -->
 </h1>
 
 ## 🔥 Instalação
