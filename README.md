@@ -8,14 +8,6 @@
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/maykon-oliveira/nlw-1">
 
   <img alt="Repository size" src="https://img.shields.io/github/repo-size/maykon-oliveira/nlw-1">
-  
-  <a href="https://github.com/maykon-oliveira/nlw-1/commits/master">
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/maykon-oliveira/nlw-1">
-  </a>
-
-  <a href="https://github.com/maykon-oliveira/nlw-1/issues">
-    <img alt="Repository issues" src="https://img.shields.io/github/issues/maykon-oliveira/nlw-1">
-  </a>
 
   <a href="https://github.com/maykon-oliveira/nlw-1/blob/master/LICENSE.md">
     <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
@@ -25,7 +17,6 @@
 <p align="center">
   <a href="#rocket-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-backend">Backend</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-frontend">Frontend</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-mobile">Mobile</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-instalação">Instalação</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;

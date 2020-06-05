@@ -1,5 +1,5 @@
 {
-    "name": "leve-meu-lixo",
+    "name": "lnw-1",
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
@@ -11,15 +11,15 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/maykon-oliveira/leve-meu-lixo.git"
+        "url": "git+https://github.com/maykon-oliveira/lnw-1.git"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/maykon-oliveira/leve-meu-lixo/issues"
+        "url": "https://github.com/maykon-oliveira/lnw-1/issues"
     },
-    "homepage": "https://github.com/maykon-oliveira/leve-meu-lixo#readme",
+    "homepage": "https://github.com/maykon-oliveira/lnw-1#readme",
     "dependencies": {
         "cors": "^2.8.5",
         "express": "^4.17.1",
