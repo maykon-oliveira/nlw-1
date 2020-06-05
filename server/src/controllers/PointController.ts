@@ -1,4 +1,4 @@
-import express from 'express';
+    import express from 'express';
 import db from '../database/connection';
 import { Point } from '../models/point';
 

@@ -1,3 +1,5 @@
+import { Item } from "./Item";
+
 export interface Point {
     id: number;
     image: string;
@@ -8,5 +10,5 @@ export interface Point {
     uf: string;
     lat: number;
     lng: number;
-    items?: number[];
+    items?: Item[];
 }
