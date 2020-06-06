@@ -1,10 +1,8 @@
-import express from 'express';
+import { Request, Response } from 'express';
 import db from '../database/connection';
 
-const ItemController = express.Router();
-
-ItemController.get('', (req, res) => {
-    db('items')
+const list = async (req: Request, res: Response) => {
+    return db('items')
         .select('*')
         .then((data) => {
             const items = data.map((i) => ({ ...i, image_url: `http://192.168.1.6:8081/uploads/${i.image}` }));
@@ -14,6 +12,8 @@ ItemController.get('', (req, res) => {
             console.log(error);
             res.status(500).json(error);
         });
-});
+};
 
-export default ItemController;
+export default {
+    list,
+};

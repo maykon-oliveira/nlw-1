@@ -1,0 +1,11 @@
+{
+    "diff": true,
+    "extension": ["ts"],
+    "package": "../../package.json",
+    "reporter": "spec",
+    "slow": 1500,
+    "timeout": 20000,
+    "recursive": true,
+    "file": ["test/integration/helpers.js"],
+    "ui": "bdd"
+}
