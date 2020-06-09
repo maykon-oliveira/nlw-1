@@ -28,7 +28,7 @@
 
 ---
 
-## 🚀 Tecnologias
+## :hammer: Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
@@ -38,26 +38,33 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [Expo](https://expo.io/)
 - [API do IBGE para consumo do endereço](https://servicodados.ibge.gov.br/api/docs/localidades?versao=1#api-UFs-estadosGet)
 - [Upload de imagens](react-dropzone)
-- [Leaflet](https://leafletjs.com/examples/quick-start/)
+- [celebrate](https://github.com/arb/celebrate)
 
-## 💻 Projeto
+**Testes**
+
+- [SINON.JS](https://sinonjs.org/)
+- [Chai](https://www.chaijs.com/)
+- [Mocha](https://mochajs.org/)
+
+
+## :memo: Projeto
 
 Projeto desenvolvido durante a <strong>Next Level Week</strong> que tem como objetivo fins ecológicos.
 O <strong>Ecoleta</strong> serve como um Marketplace, uma conexão entre empresas ou entidade que coletam resíduos, sejam eles orgânicos ou inorgânicos, à pessoas que precisam fazer descarte dos resíduos.
 
-## 🌐 Frontend
+## :house: Frontend
 
 <h1 align="center">
     <!-- <img alt="Ecoleta Front-end" title="#delicinha" src=".github/frontend.gif" /> -->
 </h1>
 
-## 📱 Mobile
+## :iphone: Mobile
 
 <h1 align="center">
     <!-- <img alt="Ecoleta Mobile" title="#delicinha" src=".github/mobile.gif" /> -->
 </h1>
 
-## 🔥 Instalação
+## :wrench: Instalação
 
 ```bash
 # Clone este repositório
@@ -78,10 +85,10 @@ $ expo start
 - Não esqueça de mudar a baseURL no arquivo api.ts das pastas web e mobile para o ip da sua máquina
 ```
 
-## 🧾 Licença
+## :scroll: Licença
 
 Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
 
 ---
 
-Feito com 💗 by [Maykon Oliveira](https://www.linkedin.com/in/maykon-oliveira/)
+Feito com :blue_heart: by [Maykon Oliveira](https://www.linkedin.com/in/maykon-oliveira/)

@@ -1,12 +1,3 @@
-import knext from 'knex';
-import { resolve } from 'path';
+import Knex from 'knex';
 
-const connection = knext({
-    client: 'sqlite3',
-    connection: {
-        filename: resolve(__dirname, 'database.sqlite'),
-    },
-    useNullAsDefault: true,
-});
-
-export default connection;
+export default (config: Knex.Config): Knex => Knex(config);

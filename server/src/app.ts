@@ -5,7 +5,7 @@ import { errors } from 'celebrate';
 
 // Controllers
 import ItemRoutes from './routes/items';
-import PointController from './controllers/PointController';
+import PointRoutes from './routes/points';
 
 const app = express();
 
@@ -15,7 +15,7 @@ app.use(express.json());
 app.use('/uploads', express.static(resolve(__dirname, '..', 'uploads')));
 
 app.use('/items', ItemRoutes);
-app.use('/points', PointController);
+app.use('/points', PointRoutes);
 
 app.use(errors());
 
