@@ -8,7 +8,7 @@ export class PointController {
         this.db = db;
     }
 
-    async list(req: Request, res: Response) {
+    list = async (req: Request, res: Response) => {
         const { city, uf, items } = req.query;
 
         const sanalizedItems = String(items).split(',').map(Number);
@@ -20,14 +20,14 @@ export class PointController {
             .where('uf', String(uf))
             .distinct()
             .select('points.*')
-            .then((data) => data.map((p) => ({ ...p, image_url: `http://localhost:8081/uploads/${p.image}` })))
+            .then((data) => data.map((p) => ({ ...p, image_url: `http://192.168.1.6:8081/uploads/${p.image}` })))
             .then((data) => res.json(data));
-    }
+    };
 
-    async get(req: Request, res: Response) {
+    get = async (req: Request, res: Response) => {
         const { id } = req.params;
 
-        const point = await this.db('points').where('id', id).first();
+        const point = await this.db('points').where('id', id).first();        
 
         if (!point) {
             return res.status(404).json();
@@ -38,10 +38,10 @@ export class PointController {
             .where('point_items.point_id', point.id)
             .select('title', 'image');
 
-        return res.json({ ...point, image_url: `http://localhost:8081/uploads/${point.image}`, items });
-    }
+        return res.json({ ...point, image_url: `http://192.168.1.6:8081/uploads/${point.image}`, items });
+    };
 
-    async save(req: Request, res: Response) {
+    save = async (req: Request, res: Response) => {
         const body = req.body;
         const items: number[] = String(req.body.items)
             .split(',')
@@ -64,5 +64,5 @@ export class PointController {
         await trx.commit();
 
         return res.status(201).json({ ...point, point_id });
-    }
+    };
 }

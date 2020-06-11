@@ -20,7 +20,6 @@
   <a href="#-frontend">Frontend</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-mobile">Mobile</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-instalação">Instalação</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-instalação">Como contribuir</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#memo-licença">Licença</a>
 </p>
 
@@ -46,7 +45,6 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [Chai](https://www.chaijs.com/)
 - [Mocha](https://mochajs.org/)
 
-
 ## :memo: Projeto
 
 Projeto desenvolvido durante a <strong>Next Level Week</strong> que tem como objetivo fins ecológicos.
@@ -55,13 +53,13 @@ O <strong>Ecoleta</strong> serve como um Marketplace, uma conexão entre empresa
 ## :house: Frontend
 
 <h1 align="center">
-    <!-- <img alt="Ecoleta Front-end" title="#delicinha" src=".github/frontend.gif" /> -->
+    <img alt="Ecoleta Front-end" title="#delicinha" src=".github/web.gif" />
 </h1>
 
 ## :iphone: Mobile
 
 <h1 align="center">
-    <!-- <img alt="Ecoleta Mobile" title="#delicinha" src=".github/mobile.gif" /> -->
+    <img alt="Ecoleta Mobile" title="#delicinha" src=".github/mobile.gif" />
 </h1>
 
 ## :wrench: Instalação

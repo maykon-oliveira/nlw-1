@@ -7,8 +7,8 @@ export class ItemController {
     constructor(db: Knex) {
         this.db = db;
     }
-
-    async list(req: Request, res: Response) {
+    
+    list = async (req: Request, res: Response) => {
         return this.db('items')
             .select('*')
             .then((data) => {

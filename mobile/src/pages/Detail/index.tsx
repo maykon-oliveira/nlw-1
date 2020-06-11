@@ -49,7 +49,7 @@ const Detail = () => {
                 <Image
                     style={styles.pointImage}
                     source={{
-                        uri: point.image,
+                        uri: point.image_url,
                     }}
                 />
                 <Text style={styles.pointName}>{point.name}</Text>

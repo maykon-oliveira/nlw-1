@@ -4,7 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "start": "ts-node-dev --ignore-watch node_modules src/server.ts",
+        "start": "ts-node-dev --ignore-watch node_modules server.ts",
         "lint": "eslint 'src/**/*.{js,ts,tsx}' --quiet --fix",
         "knex:migrate": "knex --knexfile knexfile.ts migrate:latest",
         "knex:seed": "knex --knexfile knexfile.ts seed:run",

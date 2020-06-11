@@ -1,5 +1,4 @@
 import sinon, { SinonStub } from 'sinon';
-import chai from 'chai';
 import { describe } from 'mocha';
 import { ItemController } from '../../../src/controllers/ItemController';
 import Knex from 'knex';
@@ -12,7 +11,7 @@ describe('ItemController', () => {
         itemController = new ItemController(connection as Knex);
     });
 
-    it('list(req, res)', () => {
+    it('GET /items: Should returns a list of items', () => {
         const items = [{ image: 'image1.png' }, { image: 'image2.png' }, { image: 'image3.png' }];
         const res = {
             json: sinon.spy(),

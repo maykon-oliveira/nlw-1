@@ -8,6 +8,7 @@ export interface Point {
     lat: number;
     lng: number;
     image: string;
+    image_url: string;
     whatsapp: string;
     email: string;
     items: Item[];
