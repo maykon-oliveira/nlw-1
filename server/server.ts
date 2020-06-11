@@ -1,5 +1,7 @@
 import app from './src/app';
 
-app.listen(8081, () => {
+export const PORT = process.env.PORT || 8081;
+
+app.listen(PORT, () => {
     console.log('App started up');
 });

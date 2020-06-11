@@ -1,0 +1,13 @@
+version: '3.7'
+services:
+  ecoleta-web:
+    container_name: ecoleta-web
+    build: web/
+    ports:
+      - 1337:80
+    depends_on:
+      - ecoleta-api
+  ecoleta-api:
+    build: server/
+    ports:
+      - 8081:8081

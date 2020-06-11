@@ -83,6 +83,14 @@ $ expo start
 - Não esqueça de mudar a baseURL no arquivo api.ts das pastas web e mobile para o ip da sua máquina
 ```
 
+## 🐳 Deploy no docker
+
+```bash
+# Na pasta raiz do projeto
+$ sudo docker-compose up -d
+```
+http://localhost:1337
+
 ## :scroll: Licença
 
 Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.

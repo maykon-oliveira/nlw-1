@@ -5,9 +5,10 @@
     "main": "index.js",
     "scripts": {
         "start": "ts-node-dev --ignore-watch node_modules server.ts",
+        "build": "tsc --build tsconfig.json",
         "lint": "eslint 'src/**/*.{js,ts,tsx}' --quiet --fix",
-        "knex:migrate": "knex --knexfile knexfile.ts migrate:latest",
-        "knex:seed": "knex --knexfile knexfile.ts seed:run",
+        "knex:migrate": "knex --knexfile knexfile.js migrate:latest",
+        "knex:seed": "knex --knexfile knexfile.js seed:run",
         "test:integration": "NODE_ENV=test mocha --config=test/integration/.mocharc.json test/integration/**/*.spec.ts",
         "test:unit": "NODE_ENV=test mocha --config=test/unit/.mocharc.json -r ts-node/register test/unit/**/*.spec.ts"
     },
